@@ -1,0 +1,19 @@
+\documentclass[a4paper,oneside,12pt]{book}
+\usepackage[brazilian]{babel}   % suporte pt-br
+\usepackage[utf8]{inputenc}     % suporte à símbolos especiais
+\usepackage[T1]{fontenc}        % suporte à símbolos especiais
+\title{Título do Trabalho}
+\author{Autor do trabalho}
+\date{\today}
+\begin{document}
+	\maketitle	% Faz a capa
+	\tableofcontents    % Faz o sumário
+  \chapter{Introdução}\label{chap:intro}
+  Isso é a introdução...
+  \section{Primeira seção}\label{sec:pri}
+  isso é uma seção... dentro do Capítulo \ref{chap:intro}
+  \section{Segunda seção}\label{sec:seg}
+   isso é outra seção...
+  \chapter{Referencial}\label{sec:prisub}
+  isso é o referencial...
+\end{document}
