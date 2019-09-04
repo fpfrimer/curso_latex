@@ -1,0 +1,278 @@
+% Template for Carleton student presentations
+% Author: Andrew Gainer-Dewar, 2013
+% This work is licensed under the Creative Commons Attribution 4.0 International License.
+% To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
+\documentclass{beamer}
+
+% Beamer has facilities to format handouts and notes to go along with your slides,
+% but we won't use them here.
+\mode<presentation>
+
+% Beamer comes with *lots* of themes. Boadilla is a nice choice;
+% it's elegant and stays out of the way.
+% Many of the standard themes are very busy, with tables of contents in the
+% sidebar and other messiness. This is usually just a distraction for your audience.
+% (If they're looking at the ToC, it's because they're bored!)
+\usetheme{Boadilla}
+
+% We then load in the custom Carleton color scheme.
+\usecolortheme{carl}
+
+% Finally, we load the style file, which sets up various things for us.
+\usepackage{ccpres}
+
+% The lxfonts package is a nice choice for a presentation.
+% lmodern and arev are also good choices (but the latter looks a
+% bit clunky with math).
+\usepackage{lxfonts}
+
+%pacotes para português
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{hyperref}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{keystroke}
+\usepackage[newfloat]{minted}
+
+% Set your title and author data here.
+% The optional arguments will be used in the running footer;
+% simply remove them if you want to re-use the long versions.
+\title[Curso de \LaTeX]{Elaboração de Trabalhos Acadêmicos utilizando LaTeX}
+\author[F. Pfrimer]{Prof. Felipe Walter Dafico Pfrimer}
+\institute[UTFPR]{Universidade Tecnológica Federal do Paraná}
+\date{22/10/2018}
+
+\begin{document}
+
+% Each slide goes in a frame environment.
+% The first one should be your title page, which is
+% set up automatically by Beamer.
+\begin{frame}
+  \titlepage
+
+  \begin{center}
+    Uma visão básica de \LaTeX{} abordada de forma prática.
+  \end{center}
+\end{frame}
+
+% Frame 1: o que latex?
+\begin{frame}
+  \frametitle{\LaTeX{} - o que é?}
+  \pause
+  \begin{block}{Tex}
+    linguagem para formatar textos
+  \end{block}
+  \pause
+  \begin{block}{\LaTeX}
+    \begin{itemize}
+        \pause
+        \item  É um sistema de preparação de documentos que utiliza macros Tex;
+        \pause
+        \item  Precisa de um compilador;
+        \pause
+        \item  Diferente dos processadores de texto convencionais: WYSIWYG (``\textit{what you see is what you get}'').
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+% Frame 2: instruções de instalação
+\begin{frame}
+    \frametitle{\LaTeX{} no windows}
+    \pause
+    \begin{block}{1 - Instalação do MikTex - Compilador}
+        \url{https://miktex.org/}
+    \end{block}
+    \pause
+    \begin{block}{2 - Instalação do GhostView - Visualizador}
+        \url{http://pages.cs.wisc.edu/~ghost/}
+    \end{block}
+    \pause    
+    \begin{block}{3 - Instalação do Ghostscript - ferramenta para geração de pdf}
+        \url{http://www.ghostscript.com/download/}
+    \end{block}
+    \pause    
+    \begin{block}{4 - Instalação de um editor \LaTeX{}}
+        \url{http://www.texniccenter.org/}
+    \end{block}
+    \pause    
+    \begin{block}{5 - Baixe um modelo ou crie o seu}
+        Procure ajuda on-line!
+    \end{block}
+\end{frame}
+
+% Frame 3: onde procurar ajuda 
+
+\begin{frame}{Onde procurar ajuda on-line}
+
+    \begin{block}{Sites sobre \LaTeX{}}
+        \begin{itemize}
+            \item \url{https://ctan.org}
+            \item \url{https://www.latex-project.org/}
+            \item \url{https://www.overleaf.com/}
+            \item \url{https://tex.stackexchange.com/}
+            \item google
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+% Frame 4: overleaf
+
+\begin{frame}{Overleaf}
+    
+    \begin{figure}
+        \centering
+        \includegraphics[width = 0.2\textwidth]{Figuras/overleaf_og_logo.png}
+        %\caption{Caption}
+        \label{fig:my_label}
+    \end{figure}
+    \centering \url{https://www.overleaf.com/} - editor on-line, compilador e visualizador
+    \vspace{2cm}
+    
+    \centering Crie uma conta! Vamos fazer os códigos no Overleaf.
+    
+\end{frame}
+
+% Frame 5: primeiro documento
+
+\begin{frame}[fragile]
+    \frametitle{Primeiro documento}
+    
+    Crie um novo projeto no Overleaf e copie o código a seguir:
+    
+    \begin{block}{Primeiro código \LaTeX{}}
+        \verbatiminput{Codigos/cod1.tex}    
+    \end{block}
+    
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Primeira tarefa}
+    \begin{enumerate}
+        \item Crie um novo projeto no Overleaf e faça três parágrafos;
+        \item Copie um texto em português (coloque palavras com acentuação);
+        \item Observação: Dois ``\textit{Enters}'' para um novo parágrafo (\Return).
+    \end{enumerate}
+    \begin{block}{Atividade 1}
+        \verbatiminput{Codigos/cod2.tex}    
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Primeira tarefa - resultado}
+    \begin{enumerate}
+        \item Algo não está certo!
+        \item O que aconteceu com as palavras acentuadas?
+    \end{enumerate}
+    
+    \vspace{2cm}
+    
+    \centering Vamos entender melhor!
+    
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{Estrutura do código}
+
+    Existem duas partes:
+    
+    \begin{block}{Preambulo}
+        Definição do tipo de documento, entrada de pacotes e configurações. É tudo que deve ser inserido antes de \verb|\begin{document}|.
+        
+    \end{block}
+    
+    \begin{block}{Corpo do texto}
+        É o texto propriamente dito. É tudo que fica entre \verb|\begin{document}| e \verb|\end{document}|
+    \end{block}
+    
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{Estrutura do código - Exemplo}
+    
+    \inputminted{tex}{Codigos/cod3.tex}  
+    
+    \centering Note que \% é usado para comentários.
+    
+    \centering Como resolver o problema dos símbolos da atividade 1?
+    
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{Corrigindo o código da atividade 1}
+    
+    \inputminted[fontsize=\scriptsize]{tex}{Codigos/cod4.tex}  
+    
+    \centering Note que foram acrescentados os pacotes babel, inputenc, e fontenc.
+    
+    \centering Use o pacote \verb|identfirst| para identar o primeiro parágrafo.
+    
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{Capítulos, seções e subseções}
+    
+    Utilize os comandos:
+    \begin{itemize}
+        \item \verb|\chapter{}|;
+        \item \verb|\section{}|;
+        \item \verb|\subsection{}|;
+        \item e \verb|\subsubsection{}|
+    \end{itemize}
+    
+    para estruturar o texto.
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{Capítulos, seções e subseções - Exemplo}
+    
+    \inputminted[fontsize=\scriptsize]{tex}{Codigos/cod5.tex}
+    
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{Atividade 2}
+    
+    Crie um documento com três capítulos, duas seções por capítulo e duas subseções em uma das seções. Faça referências cruzadas. 
+    
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{Um documento um pouco mais completo: capa e sumário}
+    
+    \inputminted[fontsize=\scriptsize]{tex}{Codigos/cod6.tex}
+    
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{A classe Abntex2}
+    
+    O abnTeX2, evolução do abnTeX (\textit{ABsurd Norms for TeX}), é uma suíte para LaTeX que atende os requisitos das normas da ABNT (Associação Brasileira de Normas Técnicas) para elaboração de documentos técnicos e científicos brasileiros, como artigos científicos, relatórios técnicos, trabalhos acadêmicos como teses, dissertações, projetos de pesquisa e outros documentos do gênero.
+    
+    Vejamos a página do projeto: \url{https://www.abntex.net.br/}
+    
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{Modelo de trabalho de conclusão de curso}
+    
+    \begin{itemize}
+        \item Baixar em \url{http://paginapessoal.utfpr.edu.br/pfrimer/trabalho-de-conclusao-de-curso-tcc/modelo_tcc_latex.zip/view}
+        \item Fazer o upload para o overleaf.
+    \end{itemize}
+    
+    \vspace{2cm}
+    
+    O modelo foi construído com base nos seguintes pacotes:
+    \begin{itemize}
+        \item abntex2: \url{https://ctan.org/pkg/abntex2}
+        \item abntex2cite \url{http://mirrors.ibiblio.org/CTAN/macros/latex/contrib/abntex2/doc/abntex2cite.pdf}
+    \end{itemize}
+    
+\end{frame}
+
+
+
+\end{document}
