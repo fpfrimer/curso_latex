@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c}{\PYGZpc{} Preambulo}
+\PYG{k}{\PYGZbs{}documentclass}\PYG{n+nb}{\PYGZob{}}book\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+na}{[brazilian]}\PYG{n+nb}{\PYGZob{}}babel\PYG{n+nb}{\PYGZcb{}}   \PYG{c}{\PYGZpc{} suporte pt\PYGZhy{}br}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+na}{[utf8]}\PYG{n+nb}{\PYGZob{}}inputenc\PYG{n+nb}{\PYGZcb{}}     \PYG{c}{\PYGZpc{} suporte à símbolos especiais}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+na}{[T1]}\PYG{n+nb}{\PYGZob{}}fontenc\PYG{n+nb}{\PYGZcb{}}        \PYG{c}{\PYGZpc{} suporte à símbolos especiais}
+
+\PYG{c}{\PYGZpc{} Texto}
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}document\PYG{n+nb}{\PYGZcb{}}
+    ...Texto... 
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}document\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

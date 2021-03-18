@@ -1,0 +1,15 @@
+\frametitle{Modelo de trabalho de conclusão de curso}
+
+    \begin{itemize}
+        \item Baixar em \url{https://github.com/fpfrimer/curso_latex}
+        \item Fazer o upload para o overleaf.
+    \end{itemize}
+
+    \vspace{2cm}
+
+    O modelo foi construído com base nos seguintes pacotes:
+    \begin{itemize}
+        \item abntex2: \url{https://ctan.org/pkg/abntex2}
+        \item abntex2cite \url{http://mirrors.ibiblio.org/CTAN/macros/latex/contrib/abntex2/doc/abntex2cite.pdf}
+    \end{itemize}
+

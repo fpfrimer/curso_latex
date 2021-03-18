@@ -1,0 +1,21 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}documentclass}\PYG{n+na}{[a4paper,oneside,12pt]}\PYG{n+nb}{\PYGZob{}}book\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+na}{[brazilian]}\PYG{n+nb}{\PYGZob{}}babel\PYG{n+nb}{\PYGZcb{}}   \PYG{c}{\PYGZpc{} suporte pt\PYGZhy{}br}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+na}{[utf8]}\PYG{n+nb}{\PYGZob{}}inputenc\PYG{n+nb}{\PYGZcb{}}     \PYG{c}{\PYGZpc{} suporte à símbolos especiais}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+na}{[T1]}\PYG{n+nb}{\PYGZob{}}fontenc\PYG{n+nb}{\PYGZcb{}}        \PYG{c}{\PYGZpc{} suporte à símbolos especiais}
+\PYG{k}{\PYGZbs{}title}\PYG{n+nb}{\PYGZob{}}Título do Trabalho\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}author}\PYG{n+nb}{\PYGZob{}}Autor do trabalho\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}date}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}today}\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}document\PYG{n+nb}{\PYGZcb{}}
+	\PYG{k}{\PYGZbs{}maketitle}	\PYG{c}{\PYGZpc{} Faz a capa}
+	\PYG{k}{\PYGZbs{}tableofcontents}    \PYG{c}{\PYGZpc{} Faz o sumário}
+  \PYG{k}{\PYGZbs{}chapter}\PYG{n+nb}{\PYGZob{}}Introdução\PYG{n+nb}{\PYGZcb{}}\PYG{k}{\PYGZbs{}label}\PYG{n+nb}{\PYGZob{}}chap:intro\PYG{n+nb}{\PYGZcb{}}
+  Isso é a introdução...
+  \PYG{k}{\PYGZbs{}section}\PYG{n+nb}{\PYGZob{}}Primeira seção\PYG{n+nb}{\PYGZcb{}}\PYG{k}{\PYGZbs{}label}\PYG{n+nb}{\PYGZob{}}sec:pri\PYG{n+nb}{\PYGZcb{}}
+  isso é uma seção... dentro do Capítulo \PYG{k}{\PYGZbs{}ref}\PYG{n+nb}{\PYGZob{}}chap:intro\PYG{n+nb}{\PYGZcb{}}
+  \PYG{k}{\PYGZbs{}section}\PYG{n+nb}{\PYGZob{}}Segunda seção\PYG{n+nb}{\PYGZcb{}}\PYG{k}{\PYGZbs{}label}\PYG{n+nb}{\PYGZob{}}sec:seg\PYG{n+nb}{\PYGZcb{}}
+   isso é outra seção...
+  \PYG{k}{\PYGZbs{}chapter}\PYG{n+nb}{\PYGZob{}}Referencial\PYG{n+nb}{\PYGZcb{}}\PYG{k}{\PYGZbs{}label}\PYG{n+nb}{\PYGZob{}}sec:prisub\PYG{n+nb}{\PYGZcb{}}
+  isso é o referencial...
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}document\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

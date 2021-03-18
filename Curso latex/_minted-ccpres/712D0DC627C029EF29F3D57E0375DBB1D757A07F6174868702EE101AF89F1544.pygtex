@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c}{\PYGZpc{} Preambulo}
+\PYG{k}{\PYGZbs{}documentclass}\PYG{n+nb}{\PYGZob{}}book\PYG{n+nb}{\PYGZcb{}}
+
+\PYG{c}{\PYGZpc{} Texto}
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}document\PYG{n+nb}{\PYGZcb{}}
+    Hello world!
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}document\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}
